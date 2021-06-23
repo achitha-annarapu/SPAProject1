@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-xs-10 col-xs-offset-1 col-md-offset-4">
+            <form class="login-form" (ngSubmit)="login(f)" #f="ngForm">
+                <div class="form-group">
+            <label for="userName">User Name: </label>
+            <input type="text" name="userName" ngModel required 
+            ngControl = "name">
+        </div>
+            <div class="form-group">
+            <label for="userName">Password: </label>
+            <input type="password" name="pwd" ngModel>
+        </div>
+        
+        <div class="form-group">
+            <button class="btn btn-primary">Login</button>
+            <a routerLink="../register" class="btn btn-link">Register</a>
+            </div>
+            <div class="error-message">{{ errorMessage }}</div>
+        </form>
+        </div>
+    </div>
+
+</div>

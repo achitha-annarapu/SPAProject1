@@ -1,0 +1,19 @@
+﻿<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">MySite</a>
+          </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
+            <ul class="nav navbar-nav">
+              <li class="active"><a class="nav-item nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+              </li>
+              <li><a href="#">About</a></li>
+              <li><a class="nav-item nav-link" (click)="logout()">Logout</a></li>
+            </ul>
+          </div>
+    </div>
+  </nav>
+  <div class="header col-md-8">
+    <router-outlet></router-outlet>
+  </div>
+
